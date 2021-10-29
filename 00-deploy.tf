@@ -70,7 +70,6 @@ resource "shipa_app_deploy" "tf-app-deploy" {
   depends_on = [shipa_app.tf-app]
   app = shipa_app.tf-app.app[0].name
   deploy {
-    // image = var.app_image
-    image = format("docker.io/shipasoftware/:%s", var.app_image)
+    image = var.app_image
   }
 }
