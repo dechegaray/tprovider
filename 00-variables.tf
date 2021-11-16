@@ -18,9 +18,7 @@ variable "cluster_cacert" {
   description = "Cluster authentication certificate"
 }
 
-variable "ingress_ip" {
-  description = "Cluster Ingress IP"
-}
+
 
 
 
