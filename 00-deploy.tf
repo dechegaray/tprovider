@@ -16,7 +16,7 @@ resource "shipa_framework" "tf-framework" {
         security {
           disable_scan = true
         }
-        router = "istio"
+        router = "traefik"
         app_quota {
           limit = "5"
         }
@@ -41,17 +41,16 @@ resource "shipa_cluster" "tf-cluster" {
     name = var.cluster_name
     endpoint {
       addresses = [var.cluster_ip]
-      ca_cert = var.cluster_cacert
+      ca_cert = <<-EOT
+      -----BEGIN CERTIFICATE-----
+      ${var.cluster_cacert}
+      -----END CERTIFICATE-----
+      EOT
       token = var.cluster_token
     }
     resources {
       frameworks {
         name = [var.framework_name]
-      }
-      ingress_controllers {
-        type = "istio"
-        service_type = "istio"
-        ingress_ip = var.ingress_ip
       }
     }
   }
