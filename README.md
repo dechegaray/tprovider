@@ -17,8 +17,8 @@ Will need to grab your target and API key.
 shipa show token
 #TF steps. Can use the .tfvars in this project. 
 terraform init
-terraform plan  -var-file="env/sample.tfvars
-terraform apply -var-file="env/sample.tfvars
+terraform plan  -var-file="env/dist.tfvars"
+terraform apply -var-file="env/dist.tfvars"
 ```
 
 ## More Info
