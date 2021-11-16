@@ -8,5 +8,5 @@
 
 # framework_name=""
 
-# app_name="t"
+# app_name=""
 # app_image=""
