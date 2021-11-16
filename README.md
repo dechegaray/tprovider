@@ -9,7 +9,7 @@ about the structure and how to create each Shipa Object via Terraform.
 ## Shipa Cloud or On-Prem Wiring
 Will need to grab your target and API key. 
 * Target -> target.shipa.cloud. Head to Settings (click on user icon top right), then General. 
-* API Key -> Leverage the Shipa CLI to create one and assign a role. [API Key Creation Doc](https://learn.shipa.io/docs/tokens)or show the default token.
+* API Key -> Leverage the Shipa CLI to create one and assign a role. [API Key Creation Doc](https://learn.shipa.io/docs/tokens) or show the default token.
 
 ## Run this Example
 ```

@@ -7,3 +7,7 @@
 
 # Own env variables
 env/sample.tfvars
+
+# OS generated files #
+.DS_Store
+.DS_Store?
